@@ -81,6 +81,12 @@ p{margin:0 0 1rem}
   background:var(--grad);color:#04121f;font-weight:700;font-size:.85rem;letter-spacing:-.03em;
   box-shadow:0 6px 20px -6px var(--ring);
 }
+.brand-avatar{
+  width:36px;height:36px;border-radius:11px;object-fit:cover;flex:0 0 auto;
+  border:1px solid rgba(56,189,248,.35);background:var(--card-2);
+  box-shadow:0 6px 20px -6px var(--ring);
+}
+.brand:hover .brand-avatar{border-color:var(--accent)}
 .brand-text{font-size:1.02rem}
 .nav-links{display:flex;align-items:center;gap:.35rem}
 .nav-links a{
