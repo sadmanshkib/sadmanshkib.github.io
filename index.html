@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Shkib Sadman — Software Engineering, Applied AI &amp; Research</title>
-<meta name="description" content="Shkib Sadman — Software Engineering student at Yangzhou University building end-to-end applied AI and LLM pipelines, and researching knowledge distillation for ECG arrhythmia detection. Every award and appointment listed with its certificate." />
+<meta name="description" content="Shkib Sadman — Software Engineering student at Yangzhou University building end-to-end applied AI and LLM pipelines, and researching knowledge distillation for ECG arrhythmia detection. Every award and appointment links to its certificate." />
 <meta name="author" content="Shkib Sadman" />
 <meta name="theme-color" content="#070b14" />
 
@@ -62,8 +62,8 @@
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#awards">Awards</a>
-      <a href="#credentials">Credentials</a>
       <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
       <a class="nav-cta" href="#contact">Contact</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
@@ -177,7 +177,10 @@
             <li><span>Based in</span> Yangzhou, Jiangsu, China</li>
             <li><span>Open to</span> Master's programmes in AI/ML, Computer Science &amp; Software Engineering (2027 intake)</li>
             <li><span>Languages</span> Bengali (native) · English (fluent) · Hindi (fluent spoken) · Chinese (basic conversational)</li>
-            <li><span>Documents</span> <a class="fact-link" href="#credentials">24 certificates on file</a> · transcript in progress</li>
+            <li><span>Documents</span>
+              <a class="fact-link" href="assets/docs/official-transcript-2026-09.pdf" target="_blank" rel="noopener">Official transcript&nbsp;↗</a>
+              · <a class="fact-link" href="#credentials">24 certificates</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -198,6 +201,7 @@
           <div class="card-top">
             <span class="card-kicker">Independent · Open source · Apache-2.0</span>
             <h3>AI Video Dubbing Pipeline</h3>
+            <p class="card-stack">Python · Faster-Whisper · PyTorch · LLMs · Text-to-Speech · FFmpeg</p>
             <p>
               End-to-end automatic video dubbing in ten stages: FFmpeg audio extraction →
               word-level speech recognition (Faster-Whisper) → subtitle segmentation →
@@ -226,9 +230,10 @@
         <article class="card card-feature reveal">
           <div class="card-top">
             <span class="card-kicker">Professional · Industrial client · Apache-2.0</span>
-            <h3>Product-Video Localisation, EN → Simplified Chinese</h3>
+            <h3>Product-Video Localization and Technical Translation Tooling</h3>
+            <p class="card-stack">Python · LLMs · Audio Processing · QA Automation</p>
             <p>
-              Customer-facing product-video localisation for an industrial water-analysis
+              Customer-facing product-video localization for an industrial water-analysis
               instrumentation client. Machine translation alone isn't acceptable for customer
               material, so this variant adds <strong>human-in-the-loop review gates</strong>,
               <strong>adversarial QA passes</strong> that actively hunt for mistranslation,
@@ -236,10 +241,10 @@
               <strong>translation memory</strong> keeping a term identical across every video and
               document, and a tight-pacing export cut for shorter delivery durations.
             </p>
-            <p class="card-note">~3,900 LOC. Delivered dubbed product videos (normal and tight-pacing) ship in the repository. In production use at Pyxis Lab, where it cut localisation turnaround from a full day to about 20 minutes.</p>
+            <p class="card-note">~3,900 LOC. Delivered dubbed product videos (normal and tight-pacing) ship in the repository. In production use at Pyxis Lab, where it cut localization turnaround from a full day to about 20 minutes.</p>
           </div>
           <ul class="tags">
-            <li>Python</li><li>Human-in-the-loop</li><li>Adversarial QA</li><li>Translation memory</li><li>Localisation</li>
+            <li>Python</li><li>Human-in-the-loop</li><li>Adversarial QA</li><li>Translation memory</li><li>Localization</li>
           </ul>
           <a class="card-link" href="https://github.com/sadmanshkib/pyxis_video_dub-pipeline" target="_blank" rel="noopener">
             View repository <span aria-hidden="true">→</span></a>
@@ -248,13 +253,15 @@
         <article class="card card-feature reveal">
           <div class="card-top">
             <span class="card-kicker">Open source · MIT</span>
-            <h3>Translation Tooling with Persistent Term Memory</h3>
+            <h3>Technical Documents Translation Tooling with Persistent Term Memory</h3>
+            <p class="card-stack">Python · LLMs · NLP · Document Layout Engine</p>
             <p>
-              Tooling to translate a large industrial product catalogue EN → Simplified Chinese
-              while <strong>preserving layout in place</strong> — redacting text and re-inserting it
-              at its original coordinates, colours and weights — with product codes, brand names and
-              units deliberately left untranslated. Scripted extraction and QA helpers, a persistent
-              EN→ZH term memory, and the whole workflow packaged as a reusable agent skill.
+              Tooling to translate a large industrial product catalogue between English and Simplified
+              Chinese while <strong>preserving layout in place</strong> — redacting text and
+              re-inserting it at its original coordinates, colours and weights — with product codes,
+              brand names and units deliberately left untranslated. Scripted extraction and QA
+              helpers, a persistent EN→ZH term memory, and automated verification scripts that catch
+              untranslated codes and specifications before delivery.
             </p>
           </div>
           <ul class="tags">
@@ -263,39 +270,37 @@
           <a class="card-link" href="https://github.com/sadmanshkib/pyxis-catalog-translation" target="_blank" rel="noopener">
             View repository <span aria-hidden="true">→</span></a>
         </article>
-      </div>
 
-      <h3 class="more-head reveal">More projects &amp; research</h3>
-      <div class="mini-grid">
-        <a class="mini reveal" href="https://github.com/sadmanshkib/comic2video" target="_blank" rel="noopener">
-          <span class="mini-mark" aria-hidden="true">C2V</span>
-          <h4>Autonomous Comic-to-Video Engine</h4>
-          <p>Manga, manhwa and webtoons to narrated video: panel detection, VLM page understanding, script generation, TTS and FFmpeg assembly, with a DAG scheduler that routes hard pages to larger models to stay inside 6&nbsp;GB VRAM. 17-module pytest suite; 21 chapter videos rendered. Python · Apache-2.0.</p>
-          <span class="mini-go">github.com/sadmanshkib/comic2video →</span>
-        </a>
-        <div class="mini static reveal">
-          <span class="mini-mark" aria-hidden="true">KD</span>
-          <h4>Knowledge Distillation for ECG Arrhythmia Detection</h4>
-          <p><strong>Undergraduate research · Oct 2026 – present.</strong> Design and implementation of a distillation architecture for arrhythmia classification on ECG signals, supervised by Dr. Zhijun Xiao (Yangzhou University). Current stage: literature review, problem formulation, experimental planning.</p>
-          <span class="mini-go">Thesis research · in progress</span>
-        </div>
-        <div class="mini static reveal">
-          <span class="mini-mark" aria-hidden="true">RB</span>
-          <h4>Intelligent Tracked Robot — AI-based Manipulation</h4>
-          <p><strong>National Third Prize</strong>, China–Russia Industrial Innovation Competition (AI &amp; Robotics), 2025 · team AIForge Dynamics. Contributed to system design, testing and integration in a software + robotics team. <a class="mini-link" href="#cred-robotics">Certificate ↗</a></p>
-          <span class="mini-go">Competition project · 2025 · ref ZEDSG-56CS00078</span>
-        </div>
-        <a class="mini reveal" href="https://github.com/sadmanshkib/Movie-Information-Management-System" target="_blank" rel="noopener">
-          <span class="mini-mark" aria-hidden="true">Java</span>
-          <h4>Movie Information Management System</h4>
-          <p>A Java information-management system built as coursework, with data management and CRUD operations. MIT licensed.</p>
-          <span class="mini-go">github.com/sadmanshkib →</span>
-        </a>
+        <article class="card card-feature card-featured reveal" id="comic2video">
+          <div class="card-top">
+            <span class="card-kicker">Open source · Apache-2.0 · flagship project</span>
+            <h3>Comic2Video: Manga-to-Narrated-Video Engine</h3>
+            <p class="card-stack">Python · Vision-Language Models · OCR · DAG Scheduler · pytest</p>
+            <p>
+              An end-to-end multimodal pipeline that turns raw manga pages into finished narrated
+              video: panel detection, VLM page understanding, script generation, text-to-speech and
+              FFmpeg video assembly — every stage resumable, every artifact reproducible.
+            </p>
+            <p>
+              The interesting part is the <strong>dynamic DAG scheduler with an AI-routing layer</strong>:
+              it measures each page and automatically escalates the hard ones from a lightweight model
+              to a larger one, so a whole chapter renders inside a 6&nbsp;GB consumer GPU instead of
+              falling over. Correctness is pinned down by a <strong>17-module pytest suite</strong>.
+            </p>
+            <p class="card-note">21 complete chapter videos rendered (4–9 min each, H.264/AAC) — the pipeline's own output, not a demo reel.</p>
+          </div>
+          <div class="metrics">
+            <div><b>17</b><span>pytest modules guarding the pipeline</span></div>
+            <div><b>21</b><span>chapter videos rendered end to end</span></div>
+            <div><b>6 GB</b><span>VRAM budget the router is built around</span></div>
+          </div>
+          <ul class="tags">
+            <li>Python</li><li>VLM</li><li>OCR</li><li>DAG scheduler</li><li>pytest</li><li>FFmpeg</li>
+          </ul>
+          <a class="card-link" href="https://github.com/sadmanshkib/comic2video" target="_blank" rel="noopener">
+            View repository <span aria-hidden="true">→</span></a>
+        </article>
       </div>
-      <p class="repo-cta reveal">
-        <a class="btn btn-ghost" href="https://github.com/sadmanshkib?tab=repositories" target="_blank" rel="noopener">
-          Browse all repositories on GitHub</a>
-      </p>
     </div>
   </section>
 
@@ -356,45 +361,115 @@
       <header class="sec-head reveal">
         <p class="eyebrow">04 — Recognition</p>
         <h2>Scholarships &amp; awards</h2>
-        <p class="sec-sub">Seven documented awards. Each row links to its certificate record in the next section.</p>
+        <p class="sec-sub">Seven documented awards. Open any certificate to see the original document.</p>
       </header>
       <ul class="award-list">
         <li class="reveal">
           <span class="award-badge gold" aria-hidden="true">★</span>
           <div><strong>Jiangsu Provincial Government Scholarship</strong><span>Jiangsu Provincial Department of Education · 2025</span></div>
-          <a class="verify ok" href="#cred-jpgs">On file</a>
+          <a class="verify ok" href="assets/certificates/jiangsu-scholarship-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge gold" aria-hidden="true">★</span>
-          <div><strong>National Third Prize — China–Russia Industrial Innovation Competition</strong><span>Robotics &amp; AI · team AIForge Dynamics · Dec 2025</span></div>
-          <a class="verify ok" href="#cred-robotics">On file</a>
+          <div><strong>National Third Prize — China–Russia Industrial Innovation Competition</strong><span>Robotics &amp; AI · team AIForge Dynamics · Dec 2025 · ref ZEDSG-56CS00078</span></div>
+          <a class="verify ok" href="assets/certificates/robotics-3rd-prize-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge" aria-hidden="true">◆</span>
           <div><strong>Best Team Award — 5th Science &amp; Technology Innovation Competition</strong><span>Yangzhou University · member of Team Goujian · 2024</span></div>
-          <a class="verify ok" href="#cred-bestteam">On file</a>
+          <a class="verify ok" href="assets/certificates/best-team-2024.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge" aria-hidden="true">◆</span>
           <div><strong>Excellent Residential Assistant Award</strong><span>College for Overseas Education · 2024–25</span></div>
-          <a class="verify ok" href="#cred-ra">On file</a>
+          <a class="verify ok" href="assets/certificates/excellent-residential-assistant-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge" aria-hidden="true">◆</span>
           <div><strong>Team Excellence Award — 2026 Innovation &amp; Entrepreneurship Carnival</strong><span>Youth League Committee, Yangzhou University · Mar 2026</span></div>
-          <a class="verify ok" href="#cred-carnival">On file</a>
+          <a class="verify ok" href="assets/certificates/innovation-carnival-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge" aria-hidden="true">◆</span>
           <div><strong>Team Special Encouragement Award — “Seeking the Flavour of Chinese New Year” Short-Video Competition</strong><span>College for Overseas Education · Apr 2026</span></div>
-          <a class="verify ok" href="#cred-shortvideo">On file</a>
+          <a class="verify ok" href="assets/certificates/short-video-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
         <li class="reveal">
           <span class="award-badge" aria-hidden="true">◆</span>
           <div><strong>Team Excellence Award — 2026 Graduation Farewell Gala</strong><span>School of Information &amp; AI (Industrial Software) · 2026</span></div>
-          <a class="verify ok" href="#cred-gala">On file</a>
+          <a class="verify ok" href="assets/certificates/graduation-gala-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">05 — Experience &amp; leadership</p>
+        <h2>Where I've worked, researched and led</h2>
+        <p class="sec-sub">Leadership entries link to their appointment certificates.</p>
+      </header>
+
+      <div class="two-col">
+        <div class="col reveal">
+          <h3 class="col-title">Research &amp; professional</h3>
+          <ol class="timeline">
+            <li>
+              <span class="t-when">Oct 2026 – Present</span>
+              <h4>Undergraduate Researcher <em>(thesis research)</em></h4>
+              <p class="t-where">Dr. Zhijun Xiao's group · Yangzhou University</p>
+              <p>Design and implementation of a knowledge distillation architecture for ECG arrhythmia detection — literature review, problem formulation and experimental planning.</p>
+            </li>
+            <li>
+              <span class="t-when">Jun 2026 – Present</span>
+              <h4>Technical Support Assistant <em>(academic internship)</em></h4>
+              <p class="t-where">Pyxis Lab® Inc. (Changzhou Luopanxing) · Changzhou, on-site</p>
+              <p>Technical documentation localization between English and Simplified Chinese through custom AI pipelines, cutting turnaround from a full day to about 20 minutes. Co-developed an after-sales and trial-item monitoring system for equipment deployment and support lifecycles.</p>
+            </li>
+            <li>
+              <span class="t-when">Jun 2025 – Jun 2026</span>
+              <h4>Frontend Web Designer Intern</h4>
+              <p class="t-where">BONGO IT Solutions</p>
+              <p>Designed responsive interfaces in HTML, CSS and JavaScript, focusing on usability and clean layout; contributed to two production e-commerce applications.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="col reveal">
+          <h3 class="col-title">Leadership &amp; service</h3>
+          <ol class="timeline">
+            <li>
+              <span class="t-when">Sep 2024 – Present</span>
+              <h4>Class Monitor</h4>
+              <p class="t-where">2023 international undergraduate cohort · Yangzhou University</p>
+              <p>Class representative for the international cohort; the 2024–25 appointment is documented by certificate.</p>
+              <a class="verify ok" href="assets/certificates/class-monitor-2024-25.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
+            </li>
+            <li>
+              <span class="t-when">Sep 2024 – Jun 2026</span>
+              <h4>Floor Leader / Residential Assistant</h4>
+              <p class="t-where">College for Overseas Education · two consecutive appointments</p>
+              <p>Residence-hall affairs and support for international students; awarded Excellent Residential Assistant for 2024–25.</p>
+              <a class="verify ok" href="assets/certificates/floor-leader-2025-26.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
+            </li>
+            <li>
+              <span class="t-when">Sep 2024 – Present</span>
+              <h4>Teaching Information Officer</h4>
+              <p class="t-where">College for Overseas Education, Yangzhou University</p>
+              <p>Collected, analysed and relayed student feedback on teaching delivery to the faculty; 2024–25 service documented.</p>
+              <a class="verify ok" href="assets/certificates/teaching-info-officer-2024-25.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
+            </li>
+            <li>
+              <span class="t-when">2019 – Present</span>
+              <h4>Founder — The Call of Roots</h4>
+              <p class="t-where">Bangladesh</p>
+              <p>A grassroots initiative engaging children through traditional and local games, promoting activity, teamwork and cultural preservation.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -402,20 +477,18 @@
   <section class="section" id="credentials">
     <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow">05 — Credentials</p>
+        <p class="eyebrow">06 — Credentials</p>
         <h2>Certificates &amp; verification</h2>
         <p class="sec-sub">
-          Every award and appointment on this page rests on a physical certificate issued by the body
-          named beside it — 24 certificates across 16 records, listed below. Scans are held privately
-          and copies go to admissions committees and employers on request. Chinese institutional
-          certificates carry no public verification URL, so each issuing body is named in full for
-          direct confirmation, and any reference number printed on a document is quoted. Counts show
-          how many documents support each record.
+          Every award and appointment on this page rests on a physical document issued by the body
+          named beside it. Open any certificate to read the original — each link opens in a new tab.
+          Issuers and dates are reproduced as printed, and any reference number on a document is
+          quoted. Counts show how many documents support each record.
         </p>
       </header>
 
       <div class="cred-legend reveal">
-        <span class="cred-chip ok">Certificate on file</span>
+        <span class="cred-chip ok">View certificate ↗</span>
         <span class="cred-chip pend">Awaiting document</span>
         <a class="btn btn-ghost btn-sm" href="mailto:sadmanshkib@gmail.com?subject=Request%20for%20certificate%20copies">Request copies</a>
       </div>
@@ -430,7 +503,7 @@
                 <strong>Jiangsu Provincial Government Scholarship <span class="cred-tag">省级</span></strong>
                 <p class="cred-meta">Jiangsu Provincial Department of Education · certified by the College for Overseas Education, Yangzhou University · 2025</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/jiangsu-scholarship-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-robotics">
               <div class="cred-main">
@@ -438,42 +511,42 @@
                 <p class="cred-meta">Robotics &amp; AI special track · team group · Organising Committee, China–Russia Industrial Innovation Competition · Dec 2025</p>
                 <p class="cred-ref">Certificate no. ZEDSG-56CS00078</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/robotics-3rd-prize-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-bestteam">
               <div class="cred-main">
                 <strong>Best Team — 5th Science &amp; Technology Innovation Competition</strong>
                 <p class="cred-meta">Yangzhou University · recognised “as a member of Team Goujian” · 2024 award cycle</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/best-team-2024.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-ra">
               <div class="cred-main">
                 <strong>Excellent Residential Assistant 2024–2025 <span class="cred-tag">优秀楼层长</span></strong>
                 <p class="cred-meta">College for Overseas Education, Yangzhou University · issued Aug 2025 · service period Sep 2024 – Jun 2025</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/excellent-residential-assistant-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-carnival">
               <div class="cred-main">
                 <strong>Team Excellence Award — 2026 “Qingke” Innovation &amp; Entrepreneurship Carnival <span class="cred-tag">优秀奖</span></strong>
                 <p class="cred-meta">Youth League Committee, Yangzhou University · Mar 2026 · four-person team</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/innovation-carnival-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-shortvideo">
               <div class="cred-main">
                 <strong>Team Special Encouragement Award — “Seeking the Flavour of Chinese New Year” Short-Video Competition <span class="cred-tag">特别鼓励奖</span></strong>
                 <p class="cred-meta">College for Overseas Education, Yangzhou University · Apr 2026 · work 《新年快乐》, three-person team</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/short-video-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-gala">
               <div class="cred-main">
                 <strong>Team Excellence Award — 2026 Graduation Farewell Gala <span class="cred-tag">优秀奖</span></strong>
                 <p class="cred-meta">School of Information and Artificial Intelligence (Industrial Software), Yangzhou University · 2026 graduating cohort · team award</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/graduation-gala-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
           </ul>
         </div>
@@ -484,9 +557,11 @@
             <li id="cred-floorleader">
               <div class="cred-main">
                 <strong>Floor Leader / Residential Assistant <span class="cred-tag">海外学生公寓楼层长</span></strong>
-                <p class="cred-meta">College for Overseas Education, Yangzhou University · two appointment certificates: Sep&nbsp;2024&nbsp;–&nbsp;Jun&nbsp;2025 (issued Sep&nbsp;2024) and Sep&nbsp;2025&nbsp;–&nbsp;Jun&nbsp;2026 (issued Oct&nbsp;2025)</p>
+                <p class="cred-meta">College for Overseas Education, Yangzhou University · two appointment certificates:
+                  <a class="doc-link" href="assets/certificates/floor-leader-2024-25.jpg" target="_blank" rel="noopener">Sep&nbsp;2024&nbsp;–&nbsp;Jun&nbsp;2025&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/floor-leader-2025-26.jpg" target="_blank" rel="noopener">Sep&nbsp;2025&nbsp;–&nbsp;Jun&nbsp;2026&nbsp;↗</a></p>
               </div>
-              <span class="cred-chip ok">2 certificates</span>
+              <a class="cred-chip ok" href="assets/certificates/floor-leader-2025-26.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-classmonitor">
               <div class="cred-main">
@@ -494,7 +569,7 @@
                 <p class="cred-meta">School of Information and Artificial Intelligence · 2024–2025 academic year · issued 5 Nov 2025</p>
                 <p class="cred-ref pend">2025–26 continuation is self-reported; renewal certificate awaited.</p>
               </div>
-              <span class="cred-chip ok">On file · 2024–25</span>
+              <a class="cred-chip ok" href="assets/certificates/class-monitor-2024-25.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-tio">
               <div class="cred-main">
@@ -502,21 +577,26 @@
                 <p class="cred-meta">College for Overseas Education, Yangzhou University · 2024–2025 academic year · issued Oct 2025</p>
                 <p class="cred-ref pend">2025–26 continuation is self-reported; renewal certificate awaited.</p>
               </div>
-              <span class="cred-chip ok">On file · 2024–25</span>
+              <a class="cred-chip ok" href="assets/certificates/teaching-info-officer-2024-25.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-dorm">
               <div class="cred-main">
                 <strong>Excellent Civilised Dormitory <span class="cred-tag">优秀文明宿舍</span></strong>
-                <p class="cred-meta">College for Overseas Education · joint room award, third and fourth selection rounds · 2025 and 2026 cycles</p>
+                <p class="cred-meta">College for Overseas Education · joint room award:
+                  <a class="doc-link" href="assets/certificates/dormitory-2025.jpg" target="_blank" rel="noopener">third round, 2025&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/dormitory-2026.jpg" target="_blank" rel="noopener">fourth round, 2026&nbsp;↗</a></p>
               </div>
-              <span class="cred-chip ok">2 certificates</span>
+              <a class="cred-chip ok" href="assets/certificates/dormitory-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-volunteer">
               <div class="cred-main">
                 <strong>Volunteer service</strong>
-                <p class="cred-meta">7th International Cultural Festival, 25 Apr 2026 · international-student dormitory relocation, May 2026 · Slender West Lake, 29 Sep – 6 Oct 2023 (3.5 recorded hours at that event)</p>
+                <p class="cred-meta">Three service records:
+                  <a class="doc-link" href="assets/certificates/volunteer-cultural-festival-2026.pdf" target="_blank" rel="noopener">7th International Cultural Festival, 25 Apr 2026&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/volunteer-dorm-relocation-2026.pdf" target="_blank" rel="noopener">dormitory relocation, May 2026&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/volunteer-slender-west-lake-2023.jpg" target="_blank" rel="noopener">Slender West Lake, 2023&nbsp;↗</a></p>
               </div>
-              <span class="cred-chip ok">3 certificates</span>
+              <a class="cred-chip ok" href="assets/certificates/volunteer-cultural-festival-2026.pdf" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
           </ul>
         </div>
@@ -529,28 +609,48 @@
                 <strong>2025 “Zhi &amp; Xing Guizhou” Silk Road Youth Exchange Programme — Certificate of Attendance</strong>
                 <p class="cred-meta">China–ASEAN Education Cooperation Week Secretariat and Tongren University · 18–24 Aug 2025 · 48 hours of study</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/silk-road-exchange-2025.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-hanyu">
               <div class="cred-main">
                 <strong>“Hanyu Jinliang” Chinese Language &amp; Culture Exchange</strong>
-                <p class="cred-meta">Youth League Committee, College of Liberal Arts, Yangzhou University · episodes 11 (17 Oct 2025), 20 (29 Apr 2026) and 21 (11 May 2026) · participation with favourable-performance wording</p>
+                <p class="cred-meta">Youth League Committee, College of Liberal Arts, Yangzhou University · participation with favourable-performance wording:
+                  <a class="doc-link" href="assets/certificates/hanyu-jinliang-11-2025.pdf" target="_blank" rel="noopener">ep.&nbsp;11, 17&nbsp;Oct&nbsp;2025&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/hanyu-jinliang-20-2026.pdf" target="_blank" rel="noopener">ep.&nbsp;20, 29&nbsp;Apr&nbsp;2026&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/hanyu-jinliang-21-2026.pdf" target="_blank" rel="noopener">ep.&nbsp;21, 11&nbsp;May&nbsp;2026&nbsp;↗</a></p>
               </div>
-              <span class="cred-chip ok">3 certificates</span>
+              <a class="cred-chip ok" href="assets/certificates/hanyu-jinliang-11-2025.pdf" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-commendations">
               <div class="cred-main">
                 <strong>Performance commendations — outstanding performance</strong>
-                <p class="cred-meta">College for Overseas Education, Yangzhou University · International Cultural Festival 2025 (18 May 2025) and 2026 (25 Apr 2026) · International Students’ New Year Gala (11 Jan 2026)</p>
+                <p class="cred-meta">College for Overseas Education, Yangzhou University:
+                  <a class="doc-link" href="assets/certificates/cultural-festival-2025.jpg" target="_blank" rel="noopener">Cultural Festival 2025&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/cultural-festival-2026.jpg" target="_blank" rel="noopener">Cultural Festival 2026&nbsp;↗</a> ·
+                  <a class="doc-link" href="assets/certificates/new-year-gala-2026.jpg" target="_blank" rel="noopener">New Year Gala 2026&nbsp;↗</a></p>
               </div>
-              <span class="cred-chip ok">3 certificates</span>
+              <a class="cred-chip ok" href="assets/certificates/new-year-gala-2026.jpg" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
             </li>
             <li id="cred-run">
               <div class="cred-main">
                 <strong>“Xunji Yangzijin” campus cross-country run — participation certificate</strong>
                 <p class="cred-meta">Graduate Unions of Yangzhou University and the School of Civil Engineering &amp; Transportation · 10 May 2026</p>
               </div>
-              <span class="cred-chip ok">On file</span>
+              <a class="cred-chip ok" href="assets/certificates/cross-country-run-2026.pdf" target="_blank" rel="noopener">View certificate&nbsp;↗</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cred-group reveal">
+          <h3>Academic records</h3>
+          <ul class="cred-list">
+            <li id="cred-transcript">
+              <div class="cred-main">
+                <strong>Official transcript — Yangzhou University <span class="cred-tag">成绩单</span></strong>
+                <p class="cred-meta">Issued September 2026 · 46 graded courses · GPA 3.58 / 5.00 · 130.0 credits recorded · 2025–26 weighted average 92.42, the basis of the class ranking</p>
+                <p class="cred-ref">Two pages. Passport number and date of birth are masked in the published copy.</p>
+              </div>
+              <a class="cred-chip ok" href="assets/docs/official-transcript-2026-09.pdf" target="_blank" rel="noopener">View transcript&nbsp;↗</a>
             </li>
           </ul>
         </div>
@@ -558,10 +658,10 @@
         <div class="cred-group reveal">
           <h3>Documentation in progress</h3>
           <ul class="cred-list">
-            <li id="cred-transcript">
+            <li id="cred-rank">
               <div class="cred-main">
-                <strong>Academic transcript &amp; rank statement</strong>
-                <p class="cred-meta">Yangzhou University · official GPA on the 5.00 scale, weighted averages 2023–26 and class-rank confirmation</p>
+                <strong>Class-rank statement</strong>
+                <p class="cred-meta">Written confirmation of the #1 ranking from the college (the 92.42 weighted average itself is on the transcript)</p>
               </div>
               <span class="cred-chip pend">Awaiting document</span>
             </li>
@@ -592,82 +692,11 @@
       </div>
 
       <p class="cred-note reveal">
-        Issuers and dates are listed as they appear on the document. Team awards are marked as team
-        awards; performance commendations are not ranked prizes.
-        <a href="mailto:sadmanshkib@gmail.com">Ask for any certificate</a> and I will send a copy the
+        Team awards are marked as team awards; performance commendations are not ranked prizes.
+        Anything not yet documented is listed honestly under <em>Documentation in progress</em>.
+        <a href="mailto:sadmanshkib@gmail.com">Ask for any document</a> and I will send a copy the
         same week.
       </p>
-    </div>
-  </section>
-
-  <!-- ============ EXPERIENCE ============ -->
-  <section class="section" id="experience">
-    <div class="wrap">
-      <header class="sec-head reveal">
-        <p class="eyebrow">06 — Experience &amp; leadership</p>
-        <h2>Where I've worked, researched and led</h2>
-      </header>
-
-      <div class="two-col">
-        <div class="col reveal">
-          <h3 class="col-title">Research &amp; professional</h3>
-          <ol class="timeline">
-            <li>
-              <span class="t-when">Oct 2026 – Present</span>
-              <h4>Undergraduate Researcher <em>(thesis research)</em></h4>
-              <p class="t-where">Dr. Zhijun Xiao's group · Yangzhou University</p>
-              <p>Design and implementation of a knowledge distillation architecture for ECG arrhythmia detection — literature review, problem formulation and experimental planning.</p>
-              <a class="verify pend" href="#cred-research">Confirmation pending</a>
-            </li>
-            <li>
-              <span class="t-when">Jun 2026 – Present</span>
-              <h4>Technical Support Assistant <em>(academic internship)</em></h4>
-              <p class="t-where">Pyxis Lab® Inc. (Changzhou Luopanxing) · Changzhou, on-site</p>
-              <p>Technical documentation localisation between English and Simplified Chinese through custom AI pipelines, cutting turnaround from a full day to about 20 minutes. Co-developed an after-sales and trial-item monitoring system for equipment deployment and support lifecycles.</p>
-              <a class="verify pend" href="#cred-internships">Letter pending</a>
-            </li>
-            <li>
-              <span class="t-when">Jun 2025 – Jun 2026</span>
-              <h4>Frontend Web Designer Intern</h4>
-              <p class="t-where">BONGO IT Solutions</p>
-              <p>Designed responsive interfaces in HTML, CSS and JavaScript, focusing on usability and clean layout; contributed to two production e-commerce applications.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="col reveal">
-          <h3 class="col-title">Leadership &amp; service</h3>
-          <ol class="timeline">
-            <li>
-              <span class="t-when">Sep 2024 – Present</span>
-              <h4>Class Monitor</h4>
-              <p class="t-where">2023 international undergraduate cohort · Yangzhou University</p>
-              <p>Class representative for the international cohort; the 2024–25 appointment is documented by certificate.</p>
-              <a class="verify ok" href="#cred-classmonitor">Certificate on file</a>
-            </li>
-            <li>
-              <span class="t-when">Sep 2024 – Jun 2026</span>
-              <h4>Floor Leader / Residential Assistant</h4>
-              <p class="t-where">College for Overseas Education · two consecutive appointments</p>
-              <p>Residence-hall affairs and support for international students; awarded Excellent Residential Assistant for 2024–25.</p>
-              <a class="verify ok" href="#cred-floorleader">2 certificates</a>
-            </li>
-            <li>
-              <span class="t-when">Sep 2024 – Present</span>
-              <h4>Teaching Information Officer</h4>
-              <p class="t-where">College for Overseas Education, Yangzhou University</p>
-              <p>Collected, analysed and relayed student feedback on teaching delivery to the faculty; 2024–25 service documented.</p>
-              <a class="verify ok" href="#cred-tio">Certificate on file</a>
-            </li>
-            <li>
-              <span class="t-when">2019 – Present</span>
-              <h4>Founder — The Call of Roots</h4>
-              <p class="t-where">Bangladesh</p>
-              <p>A grassroots initiative engaging children through traditional and local games, promoting activity, teamwork and cultural preservation.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -688,7 +717,7 @@
         <li><span>Phone</span><a href="tel:+8615952726772">+86 159 5272 6772</a></li>
         <li><span>LinkedIn</span><a href="https://linkedin.com/in/sadman-shkib" target="_blank" rel="noopener">linkedin.com/in/sadman-shkib</a></li>
         <li><span>GitHub</span><a href="https://github.com/sadmanshkib" target="_blank" rel="noopener">github.com/sadmanshkib</a></li>
-        <li><span>Certificates</span><a href="#credentials">24 documents on file</a></li>
+        <li><span>Transcript</span><a href="assets/docs/official-transcript-2026-09.pdf" target="_blank" rel="noopener">Official transcript (PDF)</a></li>
       </ul>
     </div>
   </section>

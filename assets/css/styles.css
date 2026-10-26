@@ -223,6 +223,22 @@ h2{font-size:clamp(1.8rem,4.4vw,2.7rem);font-weight:700}
 .card strong{color:var(--text);font-weight:600}
 .card-note{font-size:.88rem;color:var(--muted-2)}
 
+/* featured project */
+.card-featured{
+  border-color:rgba(45,212,191,.45);
+  background:
+    radial-gradient(120% 150% at 100% 0%,rgba(45,212,191,.13),transparent 55%),
+    linear-gradient(160deg,var(--card),var(--card-2));
+  box-shadow:0 26px 64px -36px rgba(45,212,191,.5);
+}
+.card-featured::before{opacity:1;background:linear-gradient(90deg,var(--accent-2),var(--accent),var(--accent-3))}
+.card-featured:hover{border-color:rgba(45,212,191,.8);box-shadow:0 32px 70px -34px rgba(45,212,191,.6)}
+.card-feature h3{margin-bottom:.35rem}
+.card-stack{
+  font-family:var(--font-mono);font-size:.74rem;letter-spacing:.04em;color:var(--muted);
+  margin:0 0 .9rem;
+}
+
 .metrics{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;
   background:var(--border-soft);border:1px solid var(--border-soft);border-radius:12px;overflow:hidden;margin:1.1rem 0;
@@ -320,6 +336,11 @@ a.mini:hover{transform:translateY(-3px);border-color:rgba(45,212,191,.45);backgr
 }
 .cred-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.85}
 .cred-chip.ok{color:#5eead4;border-color:rgba(45,212,191,.35);background:rgba(45,212,191,.08)}
+a.cred-chip{transition:color .2s,background .2s,border-color .2s}
+a.cred-chip:hover{color:#04121f;background:var(--accent-2);border-color:var(--accent-2)}
+a.cred-chip:hover::before{background:#04121f}
+.doc-link{color:var(--accent-2);border-bottom:1px solid rgba(45,212,191,.35);transition:color .2s,border-color .2s}
+.doc-link:hover{color:var(--text);border-color:var(--text)}
 .cred-chip.pend{color:#fbbf24;border-color:rgba(250,204,21,.3);background:rgba(250,204,21,.07)}
 .cred-chip.req{color:var(--accent);border-color:rgba(56,189,248,.3);background:rgba(56,189,248,.08)}
 

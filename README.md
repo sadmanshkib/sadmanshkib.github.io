@@ -18,6 +18,8 @@ assets/css/styles.css all styling (dark theme, responsive, reduced-motion & prin
 assets/js/main.js     nav state, mobile menu, scroll reveal, active-section highlighting
 assets/img/           headshot (jpg + webp), square avatar, favicon, social cover
 assets/Sadman_Shkib_CV.pdf   downloadable CV (two pages, A4)
+assets/certificates/  certificate scans linked from Awards and Credentials (24 files)
+assets/docs/          official transcript PDF (passport no. and DOB masked)
 ```
 
 ## Local preview
@@ -34,10 +36,11 @@ projects, metrics or credentials. Where work is applied systems engineering over
 pretrained models, it is described as such.
 
 The **Credentials** section lists every award and appointment with its issuing body, the date
-printed on the document and a status marker (on file / awaiting document). Certificate scans are
-held privately and supplied on request rather than published, because they carry a student number,
-room numbers and the names of teammates. Team awards are labelled as team awards and performance
-commendations are not presented as ranked prizes.
+printed on the document and a status marker (on file / awaiting document). Certificate scans live in
+`assets/certificates/` and are linked from the Awards, Experience and Credentials sections, so any
+claim can be checked against the document it rests on. The official transcript is published with the
+passport number and date of birth masked; the unredacted original stays private. Team awards are
+labelled as team awards and performance commendations are not presented as ranked prizes.
 
 ## License
 
